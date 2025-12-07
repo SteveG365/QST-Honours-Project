@@ -17,16 +17,6 @@ The goal of this project is to reconstruct unknown quantum states from simulated
 - DNN-based QST and transfer learning
 - Fidelity and eigenvalue-based evaluation tools
 
-## Features
-
-- Generate pure and mixed states for multi-qubit systems  
-- Simulate measurement noise, shot noise, and miscalibration  
-- Reconstruct states using:
-  - Maximum Likelihood Estimation  
-  - Bayesian Mean Estimation  
-  - Deep Neural Networks  
-- Evaluate reconstruction quality with fidelity and spectral diagnostics  
-
 
 ## Author
 Steven Richard Glass
