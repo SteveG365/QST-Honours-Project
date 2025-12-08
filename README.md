@@ -4,7 +4,7 @@ This project implements and compares 3 different statistical reconstruction regi
 
 ## Overview
 
-The goal of this project is to reconstruct unknown quantum states from simulated measurement data. The pipeline supports:
+The goal of this project is to reconstruct unknown quantum states represented by density matrices $\rho$ from simulated measurement data. The pipeline supports:
 
 ### State sampling:
 - Haar-random and Hilbert–Schmidt–random state generation
@@ -17,6 +17,19 @@ The goal of this project is to reconstruct unknown quantum states from simulated
 - DNN-based QST and transfer learning
 - Fidelity and eigenvalue-based evaluation tools
 
+
+## Scientific Investigation Findings
+
+The aim of this work was to evaluate each of the reconstruction methods under a range of realistic noise
+conditions. The MLE approach was found to frequently produce density matrices with zero eigenvalues,
+potentially leading experimentalists to wrongfully conclude that certain outcomes may be impossible.
+In contrast, the BME methodology avoids this pathology by averaging over the posterior distribution,
+which yields more sensible predictions. However, both MLE and BME degrade significantly in the pres-
+ence of sampling noise and measurement miscalibration. The DNN model demonstrates superior ro-
+bustness under these noise sources, while also offering improved computational scalability. Finally, a
+novel transfer-learning extension was developed for reconstructing Greenberger–Horne–Zeilinger (GHZ)
+states, achievingenhanced computational efficiency and the best reconstructiona ccuracy across all tested
+methods.
 
 ## Author
 Steven Richard Glass
